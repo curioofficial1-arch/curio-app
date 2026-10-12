@@ -1,0 +1,6 @@
+{
+  "name": "Curio",
+  "description": "Log, explore, and organize deep-dive rabbit holes, curiosity searches, findings, and tangents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

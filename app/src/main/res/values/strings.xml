@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Curio</string>
+    <string name="notification_channel_name">Curio Research Updates</string>
+    <string name="notification_channel_desc">Notifications when new deep research articles are published on Curio.</string>
+</resources>

@@ -1,0 +1,37 @@
+{
+  "entities": {
+    "Research": {
+      "collection": "researches",
+      "path": "researches/{researchId}",
+      "description": "Public research articles posted by the author on Curio for people to read like news.",
+      "fields": {
+        "title": { "type": "string", "description": "Title of the research topic" },
+        "authorName": { "type": "string", "description": "Display name of author" },
+        "authorEmail": { "type": "string", "description": "Author email" },
+        "category": { "type": "string", "description": "Category name" },
+        "spark": { "type": "string", "description": "Reason/inspiration for researching this" },
+        "overview": { "type": "string", "description": "Full research story in normal English" },
+        "keyTakeaways": { "type": "array", "description": "Main bullet points discovered" },
+        "tangents": { "type": "array", "description": "Follow-up questions or rabbit holes" },
+        "sources": { "type": "array", "description": "Sources or links referenced" },
+        "rabbitHoleDepth": { "type": "number", "description": "Depth level (1-4)" },
+        "status": { "type": "string", "description": "Publication status" },
+        "coverDrawable": { "type": "string", "description": "Optional illustration asset key" },
+        "colorHex": { "type": "string", "description": "Theme accent color" },
+        "readTimeMinutes": { "type": "number", "description": "Estimated minutes to read" },
+        "likesCount": { "type": "number", "description": "Number of reader likes" },
+        "createdAt": { "type": "timestamp", "description": "Creation timestamp" },
+        "updatedAt": { "type": "timestamp", "description": "Last update timestamp" }
+      }
+    },
+    "Bookmark": {
+      "collection": "bookmarks",
+      "path": "users/{userId}/bookmarks/{bookmarkId}",
+      "description": "User personal saved articles",
+      "fields": {
+        "researchId": { "type": "string", "description": "ID of saved research" },
+        "savedAt": { "type": "timestamp", "description": "Timestamp when saved" }
+      }
+    }
+  }
+}
